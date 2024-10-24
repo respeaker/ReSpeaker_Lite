@@ -1,9 +1,4 @@
-# XMOS XU316 DFU Firmware
-
-
-To update XMOS firmware, please refer to our [DFU guide](https://wiki.seeedstudio.com/reSpeaker_usb_v3/#update-firmware)
-
-## Change Log
+# XMOS XU316 DFU Firmware Change Log
 
 ### I2S Firmware 
 - v1.0.9: change default DAC output gain(volume) from 0dB to -2dB; support i2c read mute_status
