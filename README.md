@@ -66,3 +66,24 @@ Note:
 
 ![](./doc/images/pinout.png)
 
+### The headphone jack detection circuit
+
+
+Defaultly, ReSpeaker Lite outputs audio via the speaker connected to the JST 2Pin Connector(hereinafter referred to as JST speaker). When an external headphone or speaker is plugged into the 3.5mm Jack, the JST speaker is muted and the audio output is switched to the external device. Here are the hardware circuit of ReSpeaker Lite to achieve this feature:
+- `AUDIO_PA_EN` pin is set to high by XMOS XU316 by default. User can use I2C interface RESID 241 CMD 0x10 to control this pin.
+- `MICDET` pin is connected to GND when the 3.5mm jack is empty and it is floating when the 3.5mm jack is fully engaged
+
+![](./doc/images/headphone_jack_detection.png)
+
+#### Disable the headphone jack detection circuit
+
+If users need control the audio output path by themselves, the following steps can be done:
+
+1. Short `MICDET` pin to GND to diable the headphone jack detection:
+    - Note that please use tape to cover the microphones to protect them when soldering and cleaning
+
+![](./doc/images/disable_hp_det.png)
+
+2. Control audio output path by controlling AIC3204:
+    - Send `0x40` to Page 1 Register 0x12 and 0x13 to disable `LOL & LOR driver` (JST speaker)
+    - Or send `0x40` to Page 1 Register 0x10 and 0x11 to disable `HPL & HPR driver` (3.5mm Jack)
