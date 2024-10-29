@@ -18,7 +18,7 @@ If you are new to update XMOS firmware, please refer to our [DFU guide](./xmos_f
 - USB Firmware: [v2.0.7](./xmos_firmwares/respeaker_lite_usb_dfu_firmware_v2.0.7.bin)
 - I2S Firmware: [v1.0.9](./xmos_firmwares/respeaker_lite_i2s_dfu_firmware_v1.0.9.bin)
 - USB 48K Firmware: TODO
-- I2S 48K Firmware: TODO
+- I2S 48K Firmware: [v1.0.9]((./xmos_firmwares/respeaker_lite_i2s_dfu_firmware_48k_v1.0.9.bin)), device name is "ReSpeaker Lite(48K)", I2S runs on 48KHz
 - [Older versions](./xmos_firmwares/)
 
 
