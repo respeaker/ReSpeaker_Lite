@@ -17,8 +17,10 @@ If you are new to update XMOS firmware, please refer to our [DFU guide](./xmos_f
 **Releases and [Change Logs](./xmos_firmwares/changelog.md):**
 - USB Firmware: [v2.0.7](./xmos_firmwares/respeaker_lite_usb_dfu_firmware_v2.0.7.bin)
 - I2S Firmware: [v1.0.9](./xmos_firmwares/respeaker_lite_i2s_dfu_firmware_v1.0.9.bin)
+- I2S Firmware, optimized for micro wake word: [v1.1.0]((./xmos_firmwares/respeaker_lite_i2s_factory_firmware_v1.1.0_ch0-asr_ch1-mww.bin)), runs different algorithms on 2 channels, channel 0 fits in with ASR while channel 1 fits in with [Micro Wake Word](https://esphome.io/components/micro_wake_word.html)
 - USB 48K Firmware: TODO
 - I2S 48K Firmware: [v1.0.9]((./xmos_firmwares/respeaker_lite_i2s_dfu_firmware_48k_v1.0.9.bin)), device name is "ReSpeaker Lite(48K)", I2S runs on 48KHz
+- I2S 48K Firmware, optimized for micro wake word: [v1.1.0]((./xmos_firmwares/respeaker_lite_i2s_dfu_firmware_48k_v1.1.0_ch0-asr_ch1-mww.bin)), runs different algorithms on 2 channels, channel 0 fits in with ASR while channel 1 fits in with [Micro Wake Word](https://esphome.io/components/micro_wake_word.html)
 - [Older versions](./xmos_firmwares/)
 
 
